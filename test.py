@@ -3,8 +3,8 @@ import requests
 url = "https://api-air-flightsearch-green.smiles.com.ar/v1/airlines/search?adults=1&cabinType=all&children=0&currencyCode=ARS&departureDate=2027-04-10&destinationAirportCode=PUJ&infants=0&isFlexibleDateChecked=false&originAirportCode=BUE&returnDate=2027-04-18&tripType=1&forceCongener=false&r=ar"
 
 headers = {
-    "authorization": "Bearer vw8iKGjOJVHKl3TR1N6kKiVqgTzisTbEptsH1068DMOiKZ4kN2uC7L",
-    "x-api-key": "aJqPU7xNHl9qN3NVZnPaJ208aPo2Bh2p2ZV844tw",
+    "authorization": "",
+    "x-api-key": "",
     "channel": "Web",
     "language": "es-ES",
     "region": "ARGENTINA",
