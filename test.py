@@ -1,9 +1,9 @@
 import requests
 
-url = "https://www.smiles.com.ar/emission?originAirportCode=BUE&destinationAirportCode=PUJ&departureDate=2027-04-10&adults=1&children=0&infants=0&isFlexibleDateChecked=false&tripType=1&cabinType=economic&currencyCode=ARS&returnDate=2027-04-18"
+url = "https://api-air-flightsearch-green.smiles.com.ar/v1/airlines/search?adults=1&cabinType=all&children=0&currencyCode=ARS&departureDate=2027-04-10&destinationAirportCode=PUJ&infants=0&isFlexibleDateChecked=false&originAirportCode=BUE&returnDate=2027-04-18&tripType=1&forceCongener=false&r=ar"
 
 r = requests.get(url, timeout=30)
 
-print("Status:", r.status_code)
-print("Longitud HTML:", len(r.text))
-print(r.text[:500])
+print("STATUS:", r.status_code)
+print("TIPO:", r.headers.get("content-type"))
+print(r.text[:1000])
